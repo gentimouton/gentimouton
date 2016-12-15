@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+{% block style %}
+  img {margin: 5px; border: 1px solid #ddd}
+  .section .row:nth-of-type(even) {background-color: #eee} 
+{% endblock style %}
+{% block content %}
+
+<div id="scaling" class="container-fluid section">
+  <h1>Scaling</h1>
+  <div class="row">
+    <div class="col-sm-8 col-sm-push-4 row-eq-height">
+      <h3><a href="/static/docs/2013-RCAT.pdf">RCAT: A Scalable Architecture for Massively Multiuser Online Environments</a></h3>
+      <p>Technical Report from 2013. Performance analysis of a multiplayer jigsaw game server.</p>
+    </div>  
+    <div class="col-sm-4 col-sm-pull-8 row-eq-height">
+      <img src="/static/img/jigsaw.png" class="img-rounded img-responsive" alt="Screenshot of a Jigsaw puzzle app relying on RCAT"/>
+    </div>
+  </div>
+    
+  <div class="row">
+    <div class="col-sm-8 row-eq-height">
+      <h3><a href="/static/docs/2012-RMVE.pdf">RESTful Massively Multi-User Virtual Environments: A Feasibility Study</a></h3>
+      <p>Preliminary numbers and microbenchmarks for a REST-based game server. Published at IGIC 2012.</p>
+    </div>
+    <div class="col-sm-4 row-eq-height">
+      <img src="/static/img/rmve.png" class="img-rounded img-responsive" alt="Performance curves"/>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-sm-8 col-sm-push-4 row-eq-height">
+      <h3><a href="/static/docs/2011-RCAT.pdf">RCAT: a RESTful Client-server ArchiTecture</a></h3>
+      <p>RCAT is a scalable RESTful back-end architecture aimed at supporting thousands of concurrent and interacting users. Published at Netgames 2011.</p>
+    </div>  
+    <div class="col-sm-4 col-sm-pull-8 row-eq-height">
+      <img src="/static/img/rcat.png" class="img-rounded img-responsive" alt="RCAT Architecture"/>
+    </div>
+  </div>
+    
+  <div class="row">
+    <div class="col-sm-8 row-eq-height">
+      <h3><a href="/static/docs/2011-overtuning.pdf">Distributed Tuning of Machine Learning Algorithms using MapReduce Clusters</a></h3>
+      <p>Map-Reduce scales up parameter tuning, but can harm accuracy. I used Weka, Amazon EC2, and random forests. Published at LDMTA 2011.</p>
+    </div>
+    <div class="col-sm-4 row-eq-height">
+      <img src="/static/img/random-forest.png" class="img-rounded img-responsive" alt="Random Forest results"/>
+    </div>
+  </div>
+</div> <!-- swarch section -->
+{% endblock content %}
